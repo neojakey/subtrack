@@ -1,13 +1,21 @@
-# Files that should not be committed
+# Environment — never commit secrets
 .env
+
+# PHP dependencies — run `composer install` on deploy
+vendor/
+composer.lock
+
+# Tailwind CSS — build locally with ./tailwindcss ...
+tailwindcss
+tailwind.config.js
+assets/css/output.css
+
+# Logs
 logs/*.log
 logs/app_debug.log
 
-# Upload storage outside webroot
+# Uploads
 uploads/
-
-# Tailwind watch build (committed output.css is fine)
-node_modules/
 
 # OS / editor
 .DS_Store
@@ -19,5 +27,3 @@ Thumbs.db
 # PHPUnit cache
 .phpunit.cache
 .phpunit.result.cache
-
-# Composer lock OK to keep, vendor/ committed for Fasthosts
