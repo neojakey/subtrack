@@ -1,8 +1,6 @@
 <?php
 require_once dirname(__DIR__) . '/config/config.php';
 
-SecurityHelper::requireLogin() && false; // redirect if already logged in
-
 if (Session::IsLoggedIn()) {
     UrlHelper::redirect('dashboard/');
 }
