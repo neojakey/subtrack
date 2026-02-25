@@ -1,0 +1,23 @@
+# Files that should not be committed
+.env
+logs/*.log
+logs/app_debug.log
+
+# Upload storage outside webroot
+uploads/
+
+# Tailwind watch build (committed output.css is fine)
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# PHPUnit cache
+.phpunit.cache
+.phpunit.result.cache
+
+# Composer lock OK to keep, vendor/ committed for Fasthosts
